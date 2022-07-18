@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <!-- search html start -->
+    <div class="searchContainer">
+
+        <h1>Search for your book</h1>
+        <label for="books">Chose your search </label>
+        <select name="books" id="bookSelecter">
+            <!-- <option value="All">All</option> -->
+            <option value="title">By Title</option>
+            <option value="subject">By Subject</option>
+            <option value="author">By Author</option>
+        </select>
+        <input type="search" id="bkSearch" placeholder="Select search option">
+        <button onclick="searchBook()">Go</button>
+
+  </div>
+
+  <!-- search html end -->
+
+  <!-- card html start  -->
+    
+  <div id="searchResult" class="card mb-3, bk" style="max-width: 540px;">
+    <!-- <div class="row g-0">
+      <div class="col-md-4">
+        <img src="..." class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div> -->
+  </div>
+
+  <!-- card html end  -->
+
+
+    
+    <script src="custom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
